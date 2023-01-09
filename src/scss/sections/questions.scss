@@ -1,0 +1,29 @@
+.questions {
+  @include sectionPadding;
+  background-color: $bgBlackColor;
+  // .questions__container
+
+  &__container {
+  }
+
+  // .questions__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(80) rem(95);
+    border-radius: 20px;
+    background-color: $secondColor;
+
+    @media (max-width: $pc) {
+      padding: rem(60) rem(48);
+    }
+
+     @media (max-width: $mobile) {
+      padding: rem(40) rem(20);
+    }
+
+  }
+}
+

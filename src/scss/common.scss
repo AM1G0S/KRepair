@@ -1,0 +1,398 @@
+.section-top {
+  // .section-top__text
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 25px;
+  @include adaptiveValue("margin-bottom", 60, 35);
+
+  &__text {
+    max-width: 466px;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 18, 16);
+
+    &_white {
+      color: $secondColor;
+    }
+    &_black {
+      color: $blackColor;
+    }
+  }
+}
+
+.tel-number {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 20, 18);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.button {
+  flex: 0 0 245px;
+  text-align: center;
+  padding: rem(15) rem(10) rem(15);
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 1.7;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+
+  &_main {
+    color: $whiteColor;
+    background-color: $minorColor;
+    border: 2px solid transparent;
+
+    &:hover {
+      color: $minorColor;
+      background-color: $whiteColor;
+      border-color: $minorColor;
+    }
+  }
+
+  &_second {
+    border: 2px solid $blackColor;
+
+    &:hover {
+      background-color: $blackColor;
+      color: $whiteColor;
+    }
+  }
+
+  @media (max-width: $mobileSmall) {
+    flex: 1 1 245px;
+    width: 100%;
+  }
+}
+
+.main-title {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 50, 40);
+  text-transform: uppercase;
+  color: $blackColor;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  @include adaptiveValue("font-size", 45, 30, 1920, 768);
+  text-transform: uppercase;
+
+  &__span {
+    display: block;
+    color: $minorColor;
+  }
+
+  &_white {
+    color: $secondColor;
+  }
+  &_black {
+    color: $blackColor;
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  @include adaptiveValue("font-size", 30, 20);
+  color: $blackColor;
+
+  &__span {
+    color: $minorColor;
+  }
+}
+
+.logo {
+  // .logo__img
+  &__img {
+    @include adaptiveValue("width", 195, 111);
+  }
+}
+
+// форма обратной связи
+.form-feedback {
+  position: relative;
+  width: 100%;
+  @include adaptiveValue("row-gap", 20, 10);
+  @include adaptiveValue("font-size", 16, 14);
+
+  // .feedback__wrapper
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue("margin-bottom", 40, 30);
+    @include adaptiveValue("gap", 30, 15);
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  // .form-feedback__box
+  &__box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 20, 15);
+  }
+
+  // .form-feedback__input
+  &__input {
+    width: 100%;
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    padding: rem(15) rem(25);
+
+    &::placeholder {
+      color: $greyThreeColor;
+    }
+  }
+
+  // .form-feedback__textarea
+  &__textarea {
+    width: 100%;
+    min-height: 194px;
+    resize: vertical;
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    padding: rem(15) rem(25);
+
+    &_popup {
+      // @include adaptiveValue("margin-bottom", 20, 0);
+    }
+  }
+
+  //.form-feedback__bottom
+  &__bottom {
+    max-width: 228px;
+  }
+
+  // .form-feedback__button
+  &__button {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  // .form-feedback__link
+  &__link {
+    font-weight: 600;
+    font-size: 10px;
+    color: $blackColor;
+  }
+}
+// ............................
+// кнопка добавления файлов в форме
+.addfile {
+  position: absolute;
+  right: rem(10);
+  bottom: rem(10);
+  // .addfile__button
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    // display: flex;
+    // align-items: center;
+
+    @include adaptiveValue("width", 40, 30);
+    @include adaptiveValue("height", 40, 30);
+    padding: 5px;
+    border-radius: 3px;
+    background: $secondColor url("@img/icons/addfile.svg") center no-repeat;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $greyColor;
+    }
+  }
+
+  &__button,
+  &__plus {
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__clip {
+    fill: $mainColor;
+  }
+
+  &__plus {
+    fill: $secondColor;
+    border: 1px dashed $secondColor;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+  }
+
+  &__box {
+    position: absolute;
+    bottom: rem(-57);
+    right: 28px;
+    max-width: 500px;
+    display: flex;
+    gap: rem(10);
+    z-index: 2;
+    background-color: $mainColor;
+    padding: rem(10);
+    border-radius: 9px 0 9px 9px;
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: transform 0.3s ease, opacity 0.3s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -8px;
+      right: 0;
+      width: 6px;
+      height: 9px;
+    }
+
+    &::before {
+      background-color: $mainColor;
+      clip-path: polygon(69% 63%, 100% 0, 100% 35%, 100% 100%, 81% 100%, 50% 100%, 24% 100%, 0 100%, 24% 94%, 50% 80%);
+    }
+
+    &._active {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    position: relative;
+    align-self: flex-start;
+  }
+
+  &__format {
+    padding: rem(6.5) rem(3.5);
+    font-family: "Gilroy";
+    font-size: rem(10);
+    line-height: math.div(13, 10);
+    opacity: 1;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: rem(5);
+  }
+
+  // .addfile__input
+  &__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+}
+// ............................
+// Блок отзыв
+
+.review {
+  padding: rem(25) rem(20) rem(30);
+  background-color: $secondColor;
+  border-radius: rem(15);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+  // .review__top
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  // .review__usname
+  &__usname {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 18, 16);
+    color: $blackColor;
+  }
+
+  // .review__date
+  &__date {
+    @include adaptiveValue("font-size", 16, 11, 1920, 320);
+    color: #6f7375;
+  }
+
+  // reviews__time
+  &__time {
+  }
+
+  // .review__body
+  &__body {
+    color: $blackColor;
+    margin-bottom: rem(15);
+    @include adaptiveValue("font-size", 16, 14);
+  }
+
+  // .review__text
+  &__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 4;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    p {
+    }
+  }
+
+  // .review__bottom
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: rem(20);
+    }
+  }
+
+  // .review__completely
+  &__completely {
+    transition: transform 0.3s, color 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $blackColor;
+    }
+
+    @include adaptiveValue("font-size", 14, 12);
+    color: #6f7375;
+  }
+
+  &__date,
+  &__completely {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #6f7375;
+    }
+  }
+}
+// ======================================

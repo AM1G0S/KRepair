@@ -1,0 +1,27 @@
+.reviews {
+  padding: rem(0) rem(0) rem(80);
+  // .reviews__container
+  &__container {
+  }
+
+  // .reviews__list
+  &__list {
+  }
+}
+
+.list-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(30);
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
+
+  // .list-reviews__item
+  &__item {
+    flex: 1 1 rem(367);
+  }
+}
+

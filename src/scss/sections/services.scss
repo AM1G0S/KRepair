@@ -1,0 +1,116 @@
+// bgBlackColor
+.services {
+  padding: 80px 0px 120px 0px;
+  background-color: $bgBlackColor;
+
+  // .services__container
+  &__container {
+  }
+
+  // .services__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
+
+.our-servic {
+  // .our-servic__item
+  &__item {
+    position: relative;
+    overflow: hidden;
+    @include adaptiveValue("padding-top", 50, 30);
+    @include adaptiveValue("padding-bottom", 60, 30);
+    @include adaptiveValue("padding-right", 67, 24);
+    @include adaptiveValue("padding-left", 67, 24);
+    background-color: $whiteColor;
+    border-radius: rem(10);
+
+    &:nth-child(even) {
+      div {
+        flex-direction: row-reverse;
+        text-align: end;
+        
+        a {
+          margin-left: auto;
+          @media (max-width: 836px) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // .our-servic__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: 837px) {
+      max-height: 250px;
+    }
+    @media (max-width: 836px) {
+      justify-content: center;
+    }
+  }
+
+  // .our-servic__body
+  &__body {
+    align-self: flex-start;
+    max-width: 521px;
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 836px) {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  // .our-servic__subtitle
+  &__subtitle {
+    margin-bottom: rem(25);
+  }
+
+  // .our-servic__button
+  &__button {
+    display: block;
+    padding: rem(10) rem(10);
+
+    &_right {
+      display: flex;
+      margin-left: auto;
+    }
+
+    @media (min-width: $mobileSmall) {
+      max-width: 230px;
+      width: 100%;
+    }
+
+    @media (max-width: 836px) {
+      max-height: 60px;
+    }
+  }
+
+  // .our-servic__image
+  &__image {
+  }
+
+  // .our-servic__img
+  &__img {
+    @include adaptiveValue("width", 308, 127, 1920, 320);
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+  }
+}

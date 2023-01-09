@@ -1,0 +1,51 @@
+<div id="popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+
+      <button data-close type="button" class="popup__close"></button>
+
+      <div class="popup__text">
+        <span class="popup__title">
+          Оставьте заявку
+        </span>
+        <p>Мы свяжемся с вами в ближайшее время</p>
+      </div>
+
+      <form class="popup__form form-feedback" action="">
+        <div class="form-feedback__box">
+          <input class="form-feedback__input" type="text" placeholder="Ваше имя" maxlength="20" required>
+          <input class="form-feedback__input" type="email" placeholder="E-mail" required>
+          <input class="form-feedback__input" type="tel" placeholder="Телефон*" required min="11" data-tel-input>
+        </div>
+
+        <div class="form-feedback__box">
+
+          <textarea class="form-feedback__textarea form-feedback__textarea_popup" name="massage" id="" maxlength="155"
+            cols="30" rows="9" placeholder="Опишите проблему и добавьте видео неисправности"></textarea>
+
+          <div class="addfile">
+            <button class="addfile__button" type="button">
+            </button>
+            <div class="addfile__box">
+              <label class="addfile__label" for="input">
+                <input class="addfile__input" id="input" required type="file" multiple="true">
+                <svg class="addfile__plus">
+                  <use xlink:href="@img/icons/sprite.svg#plus"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-feedback__bottom">
+          <button class="button button_main popup__button" type="submit">Оставить заявку</button>
+          <a class="form-feedback__link" href="#">Нажимая на данную кнопку вы соглашаетесь с политикой
+            конфиденциальности</a>
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+</div>

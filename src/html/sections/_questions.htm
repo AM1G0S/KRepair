@@ -1,0 +1,50 @@
+<section class="questions">
+  <div class="questions__container">
+
+    <div class="section-top">
+      <h2 class="title title_white">У вас остались
+        <span class="title__span">вопросы?</span>
+      </h2>
+
+      <div class="section-top__text section-top__text_white">
+        <p>
+          Оставьте заявку, мы свяжемся с вами и ответим на них
+        </p>
+      </div>
+    </div>
+
+    <form class="questions__form form-feedback" action="">
+
+      <div class="form-feedback__wrapper">
+
+        <div class="form-feedback__box">
+          <input class="form-feedback__input" type="text" placeholder="Ваше имя" maxlength="20" required>
+          <input class="form-feedback__input" type="email" placeholder="E-mail" required>
+          <input class="form-feedback__input" type="tel" placeholder="Телефон*" required min="11" data-tel-input>
+        </div>
+
+        <textarea class="form-feedback__textarea" name="massage" id="" cols="30" rows="8" maxlength="155"
+          placeholder="Опишите проблему"></textarea>
+        <div class="addfile">
+          <button class="addfile__button" type="button">
+          </button>
+          <div class="addfile__box">
+            <label class="addfile__label" for="input">
+              <input class="addfile__input" id="input" required type="file" multiple>
+              <svg class="addfile__plus">
+                <use xlink:href="@img/icons/sprite.svg#plus"></use>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-feedback__bottom">
+        <button class="form-feedback__button button button_main " type="submit">Оставить заявку</button>
+        <a class="form-feedback__link" href="#">Нажимая на данную кнопку вы соглашаетесь с политикой
+          конфиденциальности</a>
+      </div>
+    </form>
+
+  </div>
+</section>

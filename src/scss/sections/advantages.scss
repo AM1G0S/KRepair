@@ -1,0 +1,90 @@
+.advantages {
+  @include sectionPadding;
+  background-color: $secondColor;
+
+  // .advantages__container
+  &__container {
+  }
+
+  // .advantages__list
+  &__list {
+  }
+}
+
+.list-advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(30);
+
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+
+  // .list-advantages__item
+  &__item {
+    position: relative;
+    flex: 1 1 rem(367);
+    padding: rem(35) rem(25);
+    border-radius: rem(20);
+    color: $secondColor;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      column-gap: 35px;
+      flex: 1 1 700px;
+    }
+
+    @media (max-width: $mobile) {
+    }
+
+    // .list-advantages__item_grey
+    &_grey {
+      color: $blackColor;
+      background-color: $greyColor;
+    }
+
+    // .list-advantages__item_black
+    &_black {
+      background-color: $bgBlackColor;
+    }
+
+    // .list-advantages__item_price
+    &_price {
+      padding-bottom: 50px;
+      background-color: $redColor;
+    }
+  }
+
+  // .list-advantages__icon
+  &__icon {
+    @include adaptiveValue("max-width", 73, 56);
+    width: 100%;
+    @include adaptiveValue(" max-height", 58, 50);
+    @include adaptiveValue("margin-bottom", 25, 20);
+
+    @media (max-width: $mobile) {
+      position: absolute;
+      top: rem(30);
+      right: rem(25);
+      margin: 0;
+    }
+  }
+
+  // .list-advantages__body
+  &__body {
+    max-width: 444px;
+  }
+
+  // .list-advantages__title
+  &__title {
+    @include adaptiveValue("margin-bottom", 25, 20);
+    font-weight: 600;
+    @include adaptiveValue("font-size", 30, 20);
+    line-height: 1.5;
+
+    @media (max-width: $mobile) {
+      @include adaptiveValue("max-width", 600, 185, 768, 320);
+    }
+  }
+}
