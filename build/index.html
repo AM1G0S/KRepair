@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Krepair | Главная страница</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230109220910">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+
+					<button data-close type="button" class="popup__close"></button>
+
+					<div class="popup__text">
+						<span class="popup__title">
+							Оставьте заявку
+						</span>
+						<p>Мы свяжемся с вами в ближайшее время</p>
+					</div>
+
+					<form class="popup__form form-feedback" action="">
+						<div class="form-feedback__box">
+							<input class="form-feedback__input" type="text" placeholder="Ваше имя" maxlength="20" required>
+							<input class="form-feedback__input" type="email" placeholder="E-mail" required>
+							<input class="form-feedback__input" type="tel" placeholder="Телефон*" required min="11" data-tel-input>
+						</div>
+
+						<div class="form-feedback__box">
+
+							<textarea class="form-feedback__textarea form-feedback__textarea_popup" name="massage" id="" maxlength="155" cols="30" rows="9" placeholder="Опишите проблему и добавьте видео неисправности"></textarea>
+
+							<div class="addfile">
+								<button class="addfile__button" type="button">
+								</button>
+								<div class="addfile__box">
+									<label class="addfile__label" for="input">
+										<input class="addfile__input" id="input" required type="file" multiple="true">
+										<svg class="addfile__plus">
+											<use xlink:href="img/icons/sprite.svg#plus"></use>
+										</svg>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-feedback__bottom">
+							<button class="button button_main popup__button" type="submit">Оставить заявку</button>
+							<a class="form-feedback__link" href="#">Нажимая на данную кнопку вы соглашаетесь с политикой
+								конфиденциальности</a>
+						</div>
+					</form>
+
+
+
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+
+				<div class="header__menu menu">
+					<a class="logo" href="#">
+						<img class="logo__img" src="img/logo.svg" alt="логотип">
+					</a>
+
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+					<nav class="menu__body">
+
+						<a class="menu__logo logo" href="#">
+							<img class="logo__img" src="img/mob-logo.svg" alt="логотип">
+						</a>
+
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="html/pages/services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item _hidden">
+								<a href="" class="menu__link">Ремонт аудио техники</a>
+							</li>
+							<li class="menu__item _hidden">
+								<a href="" class="menu__link">Ремонт видео техники</a>
+							</li>
+							<li class="menu__item _hidden">
+								<a href="" class="menu__link">Ремонт телефонов</a>
+							</li>
+							<li class="menu__item _hidden">
+								<a href="" class="menu__link">Ремонт электротранспорта</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Прайс-лист</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">О компании</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+
+					</nav>
+
+					<a class="header__tel tel-number" href="tel:74992262928">+7 499 226 29 28</a>
+
+				</div>
+
+				<div class="header__body">
+					<div class="header__info">
+						<h1 class="main-title">Сервисный центр</h1>
+						<div class="header__subtitle">
+							<p>по ремонту техники в Москве</p>
+						</div>
+						<div class="header__buttons">
+							<button class="header__button button button_main" data-popup="#popup">Получить консультацию</button>
+							<button class="header__button button button_second">Смотреть прайс-лист</button>
+						</div>
+					</div>
+
+					<div class="header__img-box">
+						<picture>
+							<source srcset="img/header-img.jpg" media="(min-width: 900px)">
+							<source srcset="img/header-img-2.jpg" media="(min-width: 478px)">
+							<img class="header__img" src="img/header-img.jpg" alt="">
+						</picture>
+					</div>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+			<section class="services">
+				<div class="services__container">
+					<div class="section-top">
+						<h2 class="title title_white">Наши услуги
+							<span class="title__span">для вас</span>
+						</h2>
+
+						<div class="section-top__text section-top__text_white">
+							<p>
+								Наша компания оказывает полный спектр услуг, имеет надежную репутация, и успела завоевать доверие и
+								расположение своих
+								клиентов
+							</p>
+						</div>
+					</div>
+
+					<ul class="services__list our-servic">
+
+						<li class="our-servic__item">
+							<div class="our-servic__wrapper">
+								<div class="our-servic__body our-servic__body_speakers">
+									<h4 class="our-servic__subtitle subtitle">Ремонт
+										<span class="subtitle__span">аудио техники</span>
+									</h4>
+									<p>
+										Мы выполняем качественный ремонт аудиотехники, включая колонки, усилители и прочее оборудование, выдаем
+										гарантию и имеем
+										необходимые запчасти в наличие
+									</p>
+									<a class="our-servic__button button button_second" href="##">Подробнее</a>
+								</div>
+								<picture><source srcset="img/technic/speakers.webp" type="image/webp"><img class="our-servic__img" src="img/technic/speakers.jpg" alt="колонки" data-da=".our-servic__body_speakers, 836, 2"></picture>
+							</div>
+						</li>
+
+						<li class="our-servic__item">
+
+							<div class="our-servic__wrapper">
+
+								<div class="our-servic__body our-servic__body_camera">
+									<h4 class="our-servic__subtitle subtitle">Ремонт
+										<span class="subtitle__span">фото/видео техники</span>
+									</h4>
+									<p>
+										Осуществляем ремонт современной цифровой фото и видео аппаратура, проводимый первоклассными инженерами
+									</p>
+									<a class="our-servic__button button button_second" href="##">Подробнее</a>
+								</div>
+
+								<picture><source srcset="img/technic/camera.webp" type="image/webp"><img class="our-servic__img" src="img/technic/camera.jpg" alt="фотокамера" data-da=".our-servic__body_camera, 836, 2"></picture>
+
+							</div>
+
+						</li>
+
+						<li class="our-servic__item">
+
+							<div class="our-servic__wrapper">
+
+								<div class="our-servic__body our-servic__body_smartphone">
+									<h4 class="our-servic__subtitle subtitle">Ремонт
+										<span class="subtitle__span">телефонов</span>
+									</h4>
+									<p>
+										Мы предоставляем полный спектр услуг по обслуживанию и ремонту мобильных устройств марки Apple
+									</p>
+									<a class="our-servic__button button button_second" href="##">Подробнее</a>
+								</div>
+
+								<picture><source srcset="img/technic/smartphone.webp" type="image/webp"><img class="our-servic__img " src="img/technic/smartphone.jpg" alt="смартфон" data-da=".our-servic__body_smartphone, 836, 2"></picture>
+							</div>
+
+						</li>
+
+						<li class="our-servic__item">
+
+							<div class="our-servic__wrapper">
+
+								<div class="our-servic__body our-servic__body_gyrosc">
+									<h4 class="our-servic__subtitle subtitle">Ремонт
+										<span class="subtitle__span">электротранспорта</span>
+									</h4>
+									<p>
+										Осуществляем ремонт электровелосипедов, сегвеев, моноколес, электросамокатов, гироскутеров и пр.
+									</p>
+									<a class="our-servic__button button button_second" href="##">Подробнее</a>
+								</div>
+
+								<picture><source srcset="img/technic/gyroscooter.webp" type="image/webp"><img class="our-servic__img" src="img/technic/gyroscooter.jpg" alt="гироскутер" data-da=".our-servic__body_gyrosc, 836, 2"></picture>
+
+							</div>
+
+
+						</li>
+
+						<li class="our-servic__item">
+
+							<div class="our-servic__wrapper">
+								<div class="our-servic__body our-servic__body_display">
+									<h4 class="our-servic__subtitle subtitle">Ремонт
+										<span class="subtitle__span">телевизоров</span>
+									</h4>
+									<p>
+										Сервисный центр Krepair выполнит профессиональный ремонт телевизоров любых марок и моделей
+									</p>
+									<a class="our-servic__button button button_second" href="##">Подробнее</a>
+								</div>
+								<picture><source srcset="img/technic/display.webp" type="image/webp"><img class="our-servic__img " src="img/technic/display.jpg" alt="монитор" data-da=".our-servic__body_display, 836, 2"></picture>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+
+					<div class="section-top">
+						<h2 class="title title_black">Наши
+							<span class="title__span">Преимущества</span>
+						</h2>
+
+						<div class="section-top__text section-top__text_black">
+							<p>
+								Сервисный центр KRepair является клиентоориентированным, на первом месте у нас гарантированное качественное и
+								надежное
+								решение задач клиента
+							</p>
+						</div>
+					</div>
+
+					<ul class="advantages__list list-advantages">
+
+						<li class="list-advantages__item list-advantages__item_grey">
+
+							<svg class="list-advantages__icon">
+								<use xlink:href="img/icons/sprite.svg#remotely"></use>
+							</svg>
+
+
+							<div class="list-advantages__body">
+								<h4 class="list-advantages__title">Удаленная диагностика</h4>
+								<p>
+									Проведем предварительную диагностику по видео с неисправностью от клиента и сориентируем по стоимости
+									ремонта
+								</p>
+							</div>
+
+						</li>
+
+						<li class="list-advantages__item list-advantages__item_black">
+
+							<svg class="list-advantages__icon">
+								<use xlink:href="img/icons/sprite.svg#document"></use>
+							</svg>
+
+							<div class="list-advantages__body">
+								<h4 class="list-advantages__title">Покажем причины неисправности</h4>
+								<p>
+									Сделаем бесплатную диагностику и предоставим видео запись. Инжинер даст комментарии о причинах
+									неисправности, чтобы у
+									вас не осталось сомнений
+								</p>
+							</div>
+
+						</li>
+
+						<li class="list-advantages__item list-advantages__item_price">
+
+							<svg class="list-advantages__icon">
+								<use xlink:href="img/icons/sprite.svg#price"></use>
+							</svg>
+
+							<div class="list-advantages__body">
+								<h4 class="list-advantages__title">Прозрачная цена</h4>
+								<p>
+									Заранее согласуем цену, честную и конкурентную, которая соответствует цене в прайс-листе на нашем сайте
+								</p>
+							</div>
+
+						</li>
+					</ul>
+
+				</div>
+			</section>
+			<section class="brends">
+				<div class="brends__container">
+
+					<div class="section-top">
+						<h2 class="title title_black">Мы работаем с этими брендами
+							<span class="title__span">и не только</span>
+						</h2>
+					</div>
+
+					<div class="brends__slider-wrapper">
+						<div class="main-slider">
+							<div class="main-slider__swiper">
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/7artisans.webp" type="image/webp"><img class="main-slider__img" src="img/brends/7artisans.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/aputure.webp" type="image/webp"><img class="main-slider__img" src="img/brends/aputure.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/boling.webp" type="image/webp"><img class="main-slider__img" src="img/brends/boling.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/cvw.webp" type="image/webp"><img class="main-slider__img" src="img/brends/cvw.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/deity.webp" type="image/webp"><img class="main-slider__img" src="img/brends/deity.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/feelworld.webp" type="image/webp"><img class="main-slider__img" src="img/brends/feelworld.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/godox.webp" type="image/webp"><img class="main-slider__img" src="img/brends/godox.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/nikon.webp" type="image/webp"><img class="main-slider__img" src="img/brends/nikon.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/portkeys.webp" type="image/webp"><img class="main-slider__img" src="img/brends/portkeys.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/sirui.webp" type="image/webp"><img class="main-slider__img" src="img/brends/sirui.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/sony.webp" type="image/webp"><img class="main-slider__img" src="img/brends/sony.png" alt=""></picture>
+								</div>
+								<div class="main-slider__slide">
+									<picture><source srcset="img/brends/synco.webp" type="image/webp"><img class="main-slider__img" src="img/brends/synco.png" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+
+					<div class="section-top">
+						<h2 class="title title_black">Отзывы наших
+							<span class="title__span">клиентов</span>
+						</h2>
+					</div>
+
+					<ul class="reviews__list list-reviews">
+
+						<li class="list-reviews__item">
+
+							<div class="review">
+
+								<div class="review__top">
+									<h3 class="review__usname">Анастасия</h3>
+									<p class="review__date">Дата: <time class="review__time"></time></p>
+								</div>
+
+								<div class="review__body">
+									<div class="review__text">
+										<p>
+											Спасибо большое сервисному центру. Удобный график работы. Можно записаться через социальные сети. Дают
+											гарантию,что
+											самое главное
+										</p>
+									</div>
+								</div>
+
+								<div class="review__bottom">
+									<a class="review__completely" href="##">Читать полностью</a>
+
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+						<li class="list-reviews__item">
+							<div class="review">
+
+								<div class="review__top">
+									<h3 class="review__usname">Ирек</h3>
+									<p class="review__date">Дата: <time class="review__time"></time></p>
+								</div>
+
+								<div class="review__body">
+									<div class="review__text">
+										<p>
+											Спасибо большое сервисному центру. Удобный график работы. Можно записаться через социальные сети. Дают
+											гарантию,что
+											самое главное
+										</p>
+									</div>
+								</div>
+
+								<div class="review__bottom">
+									<a class="review__completely" href="##">Читать полностью</a>
+
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+						<li class="list-reviews__item">
+							<div class="review">
+
+								<div class="review__top">
+									<h3 class="review__usname">Евгения</h3>
+									<p class="review__date">Дата: <time class="review__time"></time></p>
+								</div>
+
+								<div class="review__body">
+									<div class="review__text">
+										<p>
+											Спасибо большое сервисному центру. Удобный график работы. Можно записаться через социальные сети. Дают
+											гарантию,что
+											самое главное
+										</p>
+									</div>
+								</div>
+
+								<div class="review__bottom">
+									<a class="review__completely" href="##">Читать полностью</a>
+
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+			<section class="questions">
+				<div class="questions__container">
+
+					<div class="section-top">
+						<h2 class="title title_white">У вас остались
+							<span class="title__span">вопросы?</span>
+						</h2>
+
+						<div class="section-top__text section-top__text_white">
+							<p>
+								Оставьте заявку, мы свяжемся с вами и ответим на них
+							</p>
+						</div>
+					</div>
+
+					<form class="questions__form form-feedback" action="">
+
+						<div class="form-feedback__wrapper">
+
+							<div class="form-feedback__box">
+								<input class="form-feedback__input" type="text" placeholder="Ваше имя" maxlength="20" required>
+								<input class="form-feedback__input" type="email" placeholder="E-mail" required>
+								<input class="form-feedback__input" type="tel" placeholder="Телефон*" required min="11" data-tel-input>
+							</div>
+
+							<textarea class="form-feedback__textarea" name="massage" id="" cols="30" rows="8" maxlength="155" placeholder="Опишите проблему"></textarea>
+							<div class="addfile">
+								<button class="addfile__button" type="button">
+								</button>
+								<div class="addfile__box">
+									<label class="addfile__label" for="input">
+										<input class="addfile__input" id="input" required type="file" multiple>
+										<svg class="addfile__plus">
+											<use xlink:href="img/icons/sprite.svg#plus"></use>
+										</svg>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-feedback__bottom">
+							<button class="form-feedback__button button button_main " type="submit">Оставить заявку</button>
+							<a class="form-feedback__link" href="#">Нажимая на данную кнопку вы соглашаетесь с политикой
+								конфиденциальности</a>
+						</div>
+					</form>
+
+				</div>
+			</section>
+			<section class="map">
+				<div class="map__container">
+
+					<div class="map__wrapper">
+						<a class="map__logo logo" href="##">
+							<img class="logo__img" src="img/mob-logo.svg" alt="логотип">
+						</a>
+						<address class="map__address">Москва, ул Шарикоподшипниковская д.4 к.4а
+						</address>
+						<p class="map__text">info@krepair.ru</p>
+						<a class="map__tel tel-number" href="tel:74992262928">+7 499 226 29 28</a>
+					</div>
+
+				</div>
+
+				<iframe class="map__widget" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c6dced1de1452383e72ba763c138745d9a500316fec4b59e4fcae73c6d4d818&amp;source=constructor
+    frameborder=" 0"></iframe>
+
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+				<a class="footer__logo logo" href="##">
+					<img class="logo__img" src="img/mob-logo.svg" alt="логотип">
+				</a>
+
+				<div data-spollers class="spollers">
+
+					<div class="spollers__item" data-spollers="584,max">
+						<button type="button" data-spoller class="spollers__title">О нас</button>
+						<div class="spollers__body">
+
+							<ul class="spollers__list list-spollers">
+								<li class="list-spollers__item"><a class="list-spollers__link" href="##">Прайс-лист</a>
+								</li>
+								<li class="list-spollers__item"><a class="list-spollers__link" href="##">О компании</a>
+								</li>
+								<li class="list-spollers__item"><a class="list-spollers__link" href="##">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="spollers__item" data-spollers="584,max">
+						<button type="button" data-spoller class="spollers__title">Наши услуги</button>
+						<div class="spollers__body">
+
+							<ul class="spollers__list list-spollers">
+								<li class="list-spollers__item">
+									<a class="list-spollers__link" href="##">Ремонт аудио техники</a>
+								</li>
+								<li class="list-spollers__item">
+									<a class="list-spollers__link" href="##">Ремонт видео техники</a>
+								</li>
+
+								<li class="list-spollers__item list-spollers__item_hide">
+									<a class="list-spollers__link" href="##">Ремонт телефонов</a>
+								</li>
+								<li class="list-spollers__item list-spollers__item_hide">
+									<a class="list-spollers__link" href="##">Ремонт электротранспорта</a>
+								</li>
+								<li class="list-spollers__item list-spollers__item_hide">
+									<a class="list-spollers__link" href="##">Политика конфиденциальности</a>
+								</li>
+								<li class="list-spollers__item">
+									<a class="list-spollers__link" href="##">Услуги</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="spollers__item spollers__item_hide">
+
+
+						<ul class="spollers__list list-spollers">
+							<li class="list-spollers__item">
+								<a class="list-spollers__link" href="##">Ремонт телефонов</a>
+							</li>
+							<li class="list-spollers__item">
+								<a class="list-spollers__link" href="##">Ремонт электротранспорта</a>
+							</li>
+							<li class="list-spollers__item">
+								<a class="list-spollers__link" href="##">Политика конфиденциальности</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+	</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+
+				<button data-close type="button" class="popup__close"></button>
+
+				<div class="popup__text">
+					<span class="popup__title">
+						Оставьте заявку
+					</span>
+					<p>Мы свяжемся с вами в ближайшее время</p>
+				</div>
+
+				<form class="popup__form form-feedback" action="">
+					<div class="form-feedback__box">
+						<input class="form-feedback__input" type="text" placeholder="Ваше имя" maxlength="20" required>
+						<input class="form-feedback__input" type="email" placeholder="E-mail" required>
+						<input class="form-feedback__input" type="tel" placeholder="Телефон*" required min="11" data-tel-input>
+					</div>
+
+					<div class="form-feedback__box">
+
+						<textarea class="form-feedback__textarea form-feedback__textarea_popup" name="massage" id="" maxlength="155" cols="30" rows="9" placeholder="Опишите проблему и добавьте видео неисправности"></textarea>
+
+						<div class="addfile">
+							<button class="addfile__button" type="button">
+							</button>
+							<div class="addfile__box">
+								<label class="addfile__label" for="input">
+									<input class="addfile__input" id="input" required type="file" multiple="true">
+									<svg class="addfile__plus">
+										<use xlink:href="img/icons/sprite.svg#plus"></use>
+									</svg>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-feedback__bottom">
+						<button class="button button_main popup__button" type="submit">Оставить заявку</button>
+						<a class="form-feedback__link" href="#">Нажимая на данную кнопку вы соглашаетесь с политикой
+							конфиденциальности</a>
+					</div>
+				</form>
+
+
+
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230109220910"></script>
+</body>
+
+</html>
